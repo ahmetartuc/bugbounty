@@ -1,0 +1,10 @@
+Host: www.example.com%0d%0aX-Forwarded-For: 192.168.1.1
+Host: www.example.com.target.com
+Host: target.com
+X-Forwarded-For: target.com
+X-Forwarded-Host: target.com
+X-Client-IP: target.com
+X-Remote-IP: target.com
+X-Remote-Addr: target.com
+X-Host: target.com
+Forwarded: target.com
