@@ -1,4 +1,4 @@
-# Advanced Dirsearch Command Cheatsheet
+# Advanced Dirsearch 
 If you trust your CPU, you gotta try it—think of it like an M1919! Ka-boom! 💣
 
 
