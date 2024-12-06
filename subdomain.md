@@ -37,7 +37,7 @@ sudo chaos -up
 Go to the URL [ProjectDiscovery API Key](https://cloud.projectdiscovery.io/?ref=api_key) to generate your API key.
 
 ```bash
-export PDCP_API_KEY=c2f00f66-a466-45a7-945f-c20d80ec15b9
+export PDCP_API_KEY={api-key}
 ```
 
 ### Basic Scan
