@@ -2,13 +2,9 @@
 If you trust your CPU, you gotta try it—think of it like an M1919! Ka-boom! 💣
 
 
-## Set Target URL
-
 ```bash
 export URL=https://example.com/
 ```
-
-## Advanced Scan Command
 
 ```bash
 dirsearch -u $URL \
