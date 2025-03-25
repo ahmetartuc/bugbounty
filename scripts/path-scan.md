@@ -2,9 +2,8 @@
 - Dynamically creates a scanning panel in the browser.
 - Collects all resource URLs and fetches their content.
 - Extracts relative paths using regex and displays them.
+---
 
-
-## CODE
 ```javascript
 (async function(){
     let scanningDiv = document.createElement("div");
