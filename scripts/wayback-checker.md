@@ -35,10 +35,11 @@ ENCODED_URL=$(python3 -c "import urllib.parse; print(urllib.parse.quote('''$URL'
 ARCHIVE_API="https://archive.org/wayback/available?url=$ENCODED_URL"
 
 RESPONSE=$(curl -s "$ARCHIVE_API")
-ARCHIVED_URL=$(echo "$RESPONSE" | grep -oP '"url":\s*"\K[^"]+')
+ARCHIVED_URL=$(echo "$RESPONSE" | grep -oP '"url":\s*"\K[^"]+' | grep "web.archive.org")
 
 if [ -n "$ARCHIVED_URL" ]; then
-  echo -e "${GREEN}[✓] Found in archive: $ARCHIVED_URL${NC}"
+  echo -e "${GREEN}[✓] FOUND:${NC}"
+  echo -e "${GREEN}$ARCHIVED_URL${NC}"
 else
   echo -e "${RED}[✗] Not found in Wayback Machine.${NC}"
 fi
