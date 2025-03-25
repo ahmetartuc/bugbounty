@@ -1,5 +1,5 @@
 # Advanced Dirsearch 
-If you count on your CPU, you gotta try it think of it like an M1919! 💣
+If you count on your CPU, you gotta try it think of it like an M1919!
 
 
 ```bash
