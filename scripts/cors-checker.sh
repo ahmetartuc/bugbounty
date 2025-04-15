@@ -1,25 +1,21 @@
 #!/bin/bash
 
-GREEN='\033[0;32m'
-RED='\033[0;31m'
-NC='\033[0m' # No Color (reset to normal)
+subdomain_file="subdomains.txt"
 
-echo -ne "${GREEN}Enter the target URL: ${NC}"
-read TARGET_URL
+evil_origin="http://evil.com"
 
-echo -ne "${RED}Enter the Origin URL: ${NC}"
-read ORIGIN_URL
+output_file="cors_results.txt"
+> "$output_file"  # clear previous content
 
-echo -e "\n[+] Sending request..."
-echo -e "Target: $TARGET_URL"
-echo -e "Origin: $ORIGIN_URL\n"
+while read -r subdomain; do
+    echo "[*] Testing $subdomain"
+    
+    response=$(curl -s -i -H "Origin: $evil_origin" -H "Host: $subdomain" "https://$subdomain" --max-time 10)
 
-RESPONSE=$(curl -s -i -H "Origin: $ORIGIN_URL" "$TARGET_URL")
+    if echo "$response" | grep -qi "Access-Control-Allow-Origin: $evil_origin"; then
+        echo "[+] POTENTIAL CORS VULNERABILITY: $subdomain" | tee -a "$output_file"
+    fi
 
-echo "$RESPONSE"
+done < "$subdomain_file"
 
-if echo "$RESPONSE" | grep -q "Access-Control-Allow-Origin: $ORIGIN_URL"; then
-    echo -e "${GREEN}\n[+] SUCCESS! Origin accepted.${NC}"
-else
-    echo -e "${RED}\n[-] FAILED. Origin rejected or header not present.${NC}"
-fi
+echo "[*] Scan complete. Results saved in $output_file"
