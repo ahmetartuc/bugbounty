@@ -1,10 +1,3 @@
-## Features
-
-- Checks if a given URL is accessible via curl.
-- Detects common HTTP failures: 401,403,404,410,429,500,502,503,504.
----
-
-```bash
 #!/bin/bash
 
 RED='\033[0;31m'
@@ -43,4 +36,3 @@ if [ -n "$ARCHIVED_URL" ]; then
 else
   echo -e "${RED}[✗] Not found in Wayback Machine.${NC}"
 fi
-```
