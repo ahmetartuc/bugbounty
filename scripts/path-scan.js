@@ -1,10 +1,3 @@
-## Features
-- Dynamically creates a scanning panel in the browser.
-- Collects all resource URLs and fetches their content.
-- Extracts relative paths using regex and displays them.
----
-
-```javascript
 (async function(){
     let scanningDiv = document.createElement("div");
     scanningDiv.style.position = "fixed";
@@ -57,4 +50,3 @@
     console.log("All scanned resources:", Array.from(t));
     scanningDiv.innerHTML = `<h4>Unique Paths Found:</h4><ul>${i.map(e => `<li>${e}</li>`).join("")}</ul>`;
 })();
-```
